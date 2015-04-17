@@ -24,12 +24,10 @@ var cbRegexp = regexp.MustCompile(`(?i)` + strings.Join([]string{
 	`game of thrones`,
 	`things that happen`,
 	`\d+ (?:dogs|cats|animals) who`,
-	`blow your mind`,
 	`\d+ things you`,
 	`is this the`,
 	`\d+ signs you['’]re`,
 	`things you didn['’]t`,
-	`will blow your`,
 	`you should be`,
 	`will make your`,
 	`ways to eat`,
@@ -43,6 +41,9 @@ var cbRegexp = regexp.MustCompile(`(?i)` + strings.Join([]string{
 	`see how`,
 	`asked \d+`,
 	`life changed forever`,
+	`never guess`,
+	`blown away`,
+	`blow your`,
 }, `|`))
 
 func IsClickbait(s string) bool {
