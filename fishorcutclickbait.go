@@ -45,6 +45,7 @@ var cbRegexp = regexp.MustCompile(`(?i)` + strings.Join([]string{
 	`blown away`,
 	`blow your`,
 	`when you see`,
+	`will give you`,
 }, `|`))
 
 func IsClickbait(s string) bool {
