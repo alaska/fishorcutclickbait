@@ -11,7 +11,7 @@ import (
 func main() {
 	doc, err := goquery.NewDocument(`http://viralnova.com`)
 	if err != nil {
-		fmt.Printf("Attempt to pull from %s failed: [%s]\n", "buzzfeed", err.Error())
+		fmt.Printf("Attempt to pull from site failed: [%s]\n", err.Error())
 		os.Exit(1)
 	}
 	total := 0
